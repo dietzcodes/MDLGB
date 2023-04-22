@@ -43,7 +43,7 @@ function create() {
     game.physics.arcade.checkCollision.down = false;
     ball.checkWorldBounds = true;
     ball.events.onOutOfBounds.add(() => {
-        alert("Game Over");
+        alert(`Game Over! Score: ${score}`);
         location.reload();
     }, this);
     function initBricks() {
